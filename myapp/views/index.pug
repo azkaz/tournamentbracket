@@ -1,0 +1,25 @@
+head
+  meta(charset='ISO-8859-1')
+  link(rel='stylesheet', href='/stylesheets/style.css')
+  link(rel='stylesheet', href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css')
+  script(src='https://code.jquery.com/jquery-3.2.1.min.js')
+  script(src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js')
+  script(src='/javascripts/BracketController.js')
+body
+  #queryContainer
+    h3 Enter how many participants who will enter the tournament
+    |  
+    input#parCount(type='text', name='participants count', value='0')
+    |  
+    input(type='button', name='countFinished', value='Submit', onclick='SubmitParticipantsCount()')
+  #nameContainer
+    input#submitBtn.btn-primary(type='button', name='submitButton', value='Submit', onclick='SubmitNames()')
+  #battleContainer
+    h3 Click on the winner
+    |
+    p
+      input#nameBox01.btn-primary.nameBtn(type='button')
+    p
+      input#nameBox02.btn-primary.nameBtn(type='button')
+  #matchHolder
+html
